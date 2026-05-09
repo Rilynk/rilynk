@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rilynk — Connecting Web3, Web4, Tech & AI to Real Customers</title>
+  <title>Rilynk — Get Real Users for Your Web3, AI & Tech Product</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="https://i.ibb.co/93Np3nsG/Rilynk.jpg" type="image/jpeg">
   <style>
     body { font-family: 'Inter', system-ui, sans-serif; }
     .hero-bg { background: linear-gradient(135deg, #0f766e 0%, #164e63 100%); }
@@ -141,7 +142,7 @@
       <h2 class="text-5xl font-bold tracking-tight text-center mb-6">Ready to get real users?</h2>
       <p class="text-2xl text-center mb-12">Submit your product. We reply within 48 hours.</p>
       
-      <form action="https://formspree.io/f/mdabwvwo" method="POST" class="space-y-8">
+      <form action="https://formspree.io/f/mdabwvwo" method="POST" id="submit-form" class="space-y-8">
         <div class="grid md:grid-cols-2 gap-6">
           <input type="text" name="product_name" placeholder="Product Name *" required class="bg-white/10 border border-white/30 px-6 py-4 rounded-2xl text-lg outline-none focus:border-amber-400">
           <input type="url" name="website" placeholder="Website / App Link *" required class="bg-white/10 border border-white/30 px-6 py-4 rounded-2xl text-lg outline-none focus:border-amber-400">
@@ -168,8 +169,13 @@
           Submit Product →
         </button>
       </form>
-      
-      <p class="text-center text-sm mt-10 opacity-75">We only work with serious teams. Real reply guaranteed.</p>
+
+      <!-- Success Message -->
+      <div id="success-message" class="hidden text-center py-12">
+        <div class="text-6xl mb-6">✅</div>
+        <h3 class="text-3xl font-semibold mb-3">Thank you!</h3>
+        <p class="text-xl text-teal-100">Your product has been submitted successfully.<br>We will review it and get back to you within 48 hours.</p>
+      </div>
     </div>
   </section>
 
@@ -192,6 +198,18 @@
       <p class="mt-10 text-sm">© 2026 Rilynk. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    const form = document.getElementById('submit-form');
+    const success = document.getElementById('success-message');
+
+    form.addEventListener('submit', function() {
+      setTimeout(() => {
+        form.classList.add('hidden');
+        success.classList.remove('hidden');
+      }, 800);
+    });
+  </script>
 
 </body>
 </html>
