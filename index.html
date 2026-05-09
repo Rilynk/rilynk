@@ -144,11 +144,23 @@
       
       <form action="https://formspree.io/f/mdabwvwo" method="POST" id="submit-form" class="space-y-8">
         <div class="grid md:grid-cols-2 gap-6">
-          <input type="text" name="product_name" placeholder="Product Name *" required class="bg-white/10 border border-white/30 px-6 py-4 rounded-2xl text-lg outline-none focus:border-amber-400">
-          <input type="url" name="website" placeholder="Website / App Link *" required class="bg-white/10 border border-white/30 px-6 py-4 rounded-2xl text-lg outline-none focus:border-amber-400">
+          <input type="text" name="founder_name" placeholder="Your Full Name *" required 
+                 class="bg-white/10 border border-white/30 px-6 py-4 rounded-2xl text-lg outline-none focus:border-amber-400">
+          
+          <input type="email" name="email" placeholder="Your Email Address *" required 
+                 class="bg-white/10 border border-white/30 px-6 py-4 rounded-2xl text-lg outline-none focus:border-amber-400">
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <input type="text" name="product_name" placeholder="Product Name *" required 
+                 class="bg-white/10 border border-white/30 px-6 py-4 rounded-2xl text-lg outline-none focus:border-amber-400">
+          
+          <input type="url" name="website" placeholder="Website / App Link *" required 
+                 class="bg-white/10 border border-white/30 px-6 py-4 rounded-2xl text-lg outline-none focus:border-amber-400">
         </div>
         
-        <textarea name="description" rows="3" placeholder="One-sentence description: What does your product do for a normal person? *" required class="w-full bg-white/10 border border-white/30 px-6 py-4 rounded-3xl text-lg outline-none focus:border-amber-400 resize-none"></textarea>
+        <textarea name="description" rows="3" placeholder="One-sentence description: What does your product do for a normal person? *" required
+                  class="w-full bg-white/10 border border-white/30 px-6 py-4 rounded-3xl text-lg outline-none focus:border-amber-400 resize-none"></textarea>
         
         <div class="grid md:grid-cols-2 gap-6">
           <select name="category" required class="bg-white/10 border border-white/30 px-6 py-4 rounded-2xl text-lg outline-none focus:border-amber-400">
@@ -160,10 +172,13 @@
             <option value="Creator">Creator Economy</option>
             <option value="Other">Other</option>
           </select>
-          <input type="text" name="users_wanted" placeholder="Users wanted in first campaign" class="bg-white/10 border border-white/30 px-6 py-4 rounded-2xl text-lg outline-none focus:border-amber-400">
+          
+          <input type="text" name="users_wanted" placeholder="How many users do you want in first campaign?" 
+                 class="bg-white/10 border border-white/30 px-6 py-4 rounded-2xl text-lg outline-none focus:border-amber-400">
         </div>
         
-        <textarea name="target_users" rows="2" placeholder="Who is this built for? (e.g. students, freelancers, families...)" required class="w-full bg-white/10 border border-white/30 px-6 py-4 rounded-3xl text-lg outline-none focus:border-amber-400 resize-none"></textarea>
+        <textarea name="target_users" rows="2" placeholder="Who is this built for? (e.g. students, freelancers, families...)" required
+                  class="w-full bg-white/10 border border-white/30 px-6 py-4 rounded-3xl text-lg outline-none focus:border-amber-400 resize-none"></textarea>
         
         <button type="submit" class="w-full bg-amber-400 text-teal-950 text-xl font-semibold py-7 rounded-3xl hover:bg-amber-300 transition-all">
           Submit Product →
