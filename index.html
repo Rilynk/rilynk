@@ -9,9 +9,13 @@
   <link rel="icon" href="https://i.ibb.co/93Np3nsG/Rilynk.jpg" type="image/jpeg">
   <style>
     body { font-family: 'Inter', system-ui, sans-serif; }
-    .hero-bg { background: linear-gradient(135deg, #0f766e 0%, #164e63 100%); }
+    .hero-bg { 
+      background: linear-gradient(135deg, #0a1729 0%, #0f2a3f 100%); 
+    }
     .gold { color: #fbbf24; }
-    .logo-glow { filter: drop-shadow(0 0 25px rgba(251, 191, 36, 0.7)); }
+    .logo-glow { filter: drop-shadow(0 0 30px rgba(251, 191, 36, 0.6)); }
+    .card-hover { transition: all 0.3s ease; }
+    .card-hover:hover { transform: translateY(-4px); }
   </style>
 </head>
 <body class="bg-zinc-950 text-white">
@@ -20,11 +24,9 @@
   <nav class="border-b border-teal-900 bg-zinc-950 sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
       <div class="flex items-center gap-3">
-        <img src="https://i.ibb.co/93Np3nsG/Rilynk.jpg" 
-             alt="Rilynk Logo" class="w-10 h-10 logo-glow">
+        <img src="https://i.ibb.co/93Np3nsG/Rilynk.jpg" alt="Rilynk Logo" class="w-9 h-9 logo-glow">
         <span class="text-3xl font-bold tracking-tight gold">Rilynk</span>
       </div>
-      
       <div class="flex items-center gap-8 text-sm">
         <a href="mailto:rilynkchat@gmail.com" class="text-zinc-400 hover:text-white flex items-center gap-2">
           <i class="fas fa-envelope"></i>
@@ -38,21 +40,21 @@
   </nav>
 
   <!-- Hero -->
-  <section class="hero-bg py-28">
+  <section class="hero-bg py-20 md:py-32">
     <div class="max-w-5xl mx-auto text-center px-6">
       <div class="flex justify-center mb-8">
         <img src="https://i.ibb.co/pjkm8y3r/Rilynk-2.jpg" 
-             alt="Rilynk" class="w-80 h-auto object-contain logo-glow rounded-2xl">
+             alt="Rilynk" class="w-64 md:w-72 h-auto object-contain logo-glow">
       </div>
-      <h1 class="text-5xl md:text-6xl font-bold tracking-tighter leading-tight mb-6">
+      <h1 class="text-4xl md:text-6xl font-bold tracking-tighter leading-tight mb-6">
         Connecting Web3, Web4, Tech &amp; AI Products<br>
         <span class="gold">to real everyday customers.</span>
       </h1>
-      <p class="text-xl text-teal-100 mb-10 max-w-2xl mx-auto">
+      <p class="text-lg md:text-xl text-teal-100 mb-10 max-w-2xl mx-auto">
         No hype. No wasted budgets.<br>
         Just real users who actually use your product.
       </p>
-      <a href="#submit" class="inline-block bg-amber-400 hover:bg-amber-300 text-teal-950 text-xl font-semibold px-12 py-6 rounded-3xl transition-all">
+      <a href="#submit" class="inline-block bg-amber-400 hover:bg-amber-300 text-teal-950 text-xl font-semibold px-10 py-5 rounded-3xl transition-all">
         Get Real Users Now →
       </a>
     </div>
@@ -63,17 +65,17 @@
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-4xl font-semibold text-center mb-12">What We Do</h2>
       <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-zinc-900 p-8 rounded-3xl border border-teal-800">
+        <div class="bg-zinc-900 p-8 rounded-3xl border border-teal-800 card-hover">
           <div class="text-amber-400 text-5xl mb-6">01</div>
           <h3 class="text-2xl font-medium mb-3">Submit Your Product</h3>
           <p class="text-zinc-400">One simple form. We review fast and only accept products built for normal people.</p>
         </div>
-        <div class="bg-zinc-900 p-8 rounded-3xl border border-teal-800">
+        <div class="bg-zinc-900 p-8 rounded-3xl border border-teal-800 card-hover">
           <div class="text-amber-400 text-5xl mb-6">02</div>
           <h3 class="text-2xl font-medium mb-3">Clear Deal</h3>
           <p class="text-zinc-400">Fixed fee or pay-per-user. Transparent terms. You only pay for results.</p>
         </div>
-        <div class="bg-zinc-900 p-8 rounded-3xl border border-teal-800">
+        <div class="bg-zinc-900 p-8 rounded-3xl border border-teal-800 card-hover">
           <div class="text-amber-400 text-5xl mb-6">03</div>
           <h3 class="text-2xl font-medium mb-3">Real Users Delivered</h3>
           <p class="text-zinc-400">Targeted IRL activations + online campaigns. Verified everyday users.</p>
@@ -82,8 +84,21 @@
     </div>
   </section>
 
+  <!-- Social Proof -->
+  <section class="py-16 bg-zinc-900">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <p class="text-teal-100 mb-8">Helping early-stage founders get real traction</p>
+      <div class="flex flex-wrap justify-center gap-10 opacity-75">
+        <div class="text-2xl font-medium">Solana Projects</div>
+        <div class="text-2xl font-medium">AI Startups</div>
+        <div class="text-2xl font-medium">DeFi Tools</div>
+        <div class="text-2xl font-medium">Consumer Apps</div>
+      </div>
+    </div>
+  </section>
+
   <!-- How It Works -->
-  <section class="py-20 bg-zinc-900">
+  <section class="py-20">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-4xl font-semibold text-center mb-12">How It Works</h2>
       <div class="max-w-3xl mx-auto space-y-12">
@@ -119,51 +134,27 @@
     </div>
   </section>
 
-  <!-- Who We Help -->
-  <section class="py-20">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <h2 class="text-4xl font-semibold mb-6">Who We Help</h2>
-      <p class="text-xl text-teal-100 max-w-2xl mx-auto mb-12">
-        Early-stage Web3, Web4, AI, and tech products built for real everyday users.
-      </p>
-      <div class="inline-flex flex-wrap gap-3 justify-center text-sm">
-        <span class="bg-zinc-800 px-6 py-3 rounded-2xl">Solana dApps</span>
-        <span class="bg-zinc-800 px-6 py-3 rounded-2xl">AI Tools</span>
-        <span class="bg-zinc-800 px-6 py-3 rounded-2xl">DeFi</span>
-        <span class="bg-zinc-800 px-6 py-3 rounded-2xl">Creator Economy</span>
-        <span class="bg-zinc-800 px-6 py-3 rounded-2xl">Consumer Tech</span>
-      </div>
-    </div>
-  </section>
-
   <!-- Final CTA + Form -->
-  <section id="submit" class="py-24 bg-teal-700 text-white">
+  <section id="submit" class="py-24 bg-gradient-to-br from-teal-800 to-teal-950 text-white">
     <div class="max-w-3xl mx-auto px-6">
       <h2 class="text-5xl font-bold tracking-tight text-center mb-6">Ready to get real users?</h2>
       <p class="text-2xl text-center mb-12">Submit your product. We reply within 48 hours.</p>
       
       <form action="https://formspree.io/f/mdabwvwo" method="POST" id="submit-form" class="space-y-8">
         <div class="grid md:grid-cols-2 gap-6">
-          <input type="text" name="founder_name" placeholder="Your Full Name *" required 
-                 class="bg-white/10 border border-white/30 px-6 py-4 rounded-2xl text-lg outline-none focus:border-amber-400">
-          
-          <input type="email" name="email" placeholder="Your Email Address *" required 
-                 class="bg-white/10 border border-white/30 px-6 py-4 rounded-2xl text-lg outline-none focus:border-amber-400">
+          <input type="text" name="founder_name" placeholder="Your Full Name *" required class="bg-white/10 border border-white/30 px-6 py-5 rounded-3xl text-lg outline-none focus:border-amber-400">
+          <input type="email" name="email" placeholder="Your Email Address *" required class="bg-white/10 border border-white/30 px-6 py-5 rounded-3xl text-lg outline-none focus:border-amber-400">
         </div>
 
         <div class="grid md:grid-cols-2 gap-6">
-          <input type="text" name="product_name" placeholder="Product Name *" required 
-                 class="bg-white/10 border border-white/30 px-6 py-4 rounded-2xl text-lg outline-none focus:border-amber-400">
-          
-          <input type="url" name="website" placeholder="Website / App Link *" required 
-                 class="bg-white/10 border border-white/30 px-6 py-4 rounded-2xl text-lg outline-none focus:border-amber-400">
+          <input type="text" name="product_name" placeholder="Product Name *" required class="bg-white/10 border border-white/30 px-6 py-5 rounded-3xl text-lg outline-none focus:border-amber-400">
+          <input type="url" name="website" placeholder="Website / App Link *" required class="bg-white/10 border border-white/30 px-6 py-5 rounded-3xl text-lg outline-none focus:border-amber-400">
         </div>
         
-        <textarea name="description" rows="3" placeholder="One-sentence description: What does your product do for a normal person? *" required
-                  class="w-full bg-white/10 border border-white/30 px-6 py-4 rounded-3xl text-lg outline-none focus:border-amber-400 resize-none"></textarea>
+        <textarea name="description" rows="3" placeholder="One-sentence description: What does your product do for a normal person? *" required class="w-full bg-white/10 border border-white/30 px-6 py-5 rounded-3xl text-lg outline-none focus:border-amber-400 resize-none"></textarea>
         
         <div class="grid md:grid-cols-2 gap-6">
-          <select name="category" required class="bg-white/10 border border-white/30 px-6 py-4 rounded-2xl text-lg outline-none focus:border-amber-400">
+          <select name="category" required class="bg-white/10 border border-white/30 px-6 py-5 rounded-3xl text-lg outline-none focus:border-amber-400">
             <option value="">Select Category *</option>
             <option value="Web3">Web3 / Blockchain</option>
             <option value="AI">AI Tool</option>
@@ -172,20 +163,16 @@
             <option value="Creator">Creator Economy</option>
             <option value="Other">Other</option>
           </select>
-          
-          <input type="text" name="users_wanted" placeholder="How many users do you want in first campaign?" 
-                 class="bg-white/10 border border-white/30 px-6 py-4 rounded-2xl text-lg outline-none focus:border-amber-400">
+          <input type="text" name="users_wanted" placeholder="How many users do you want in first campaign?" class="bg-white/10 border border-white/30 px-6 py-5 rounded-3xl text-lg outline-none focus:border-amber-400">
         </div>
         
-        <textarea name="target_users" rows="2" placeholder="Who is this built for? (e.g. students, freelancers, families...)" required
-                  class="w-full bg-white/10 border border-white/30 px-6 py-4 rounded-3xl text-lg outline-none focus:border-amber-400 resize-none"></textarea>
+        <textarea name="target_users" rows="2" placeholder="Who is this built for? (e.g. students, freelancers, families...)" required class="w-full bg-white/10 border border-white/30 px-6 py-5 rounded-3xl text-lg outline-none focus:border-amber-400 resize-none"></textarea>
         
-        <button type="submit" class="w-full bg-amber-400 text-teal-950 text-xl font-semibold py-7 rounded-3xl hover:bg-amber-300 transition-all">
+        <button type="submit" class="w-full bg-gradient-to-r from-amber-400 to-yellow-500 text-teal-950 text-xl font-semibold py-7 rounded-3xl hover:brightness-110 transition-all">
           Submit Product →
         </button>
       </form>
 
-      <!-- Success Message -->
       <div id="success-message" class="hidden text-center py-12">
         <div class="text-6xl mb-6">✅</div>
         <h3 class="text-3xl font-semibold mb-3">Thank you!</h3>
@@ -202,14 +189,12 @@
         <span class="text-2xl font-bold gold">Rilynk</span>
       </div>
       <p class="text-lg">Connecting powerful products to real customers.</p>
-      
       <div class="mt-8 flex justify-center items-center gap-2">
         <i class="fas fa-envelope"></i>
         <a href="mailto:rilynkchat@gmail.com" class="hover:text-amber-400 transition-colors">
           rilynkchat@gmail.com
         </a>
       </div>
-      
       <p class="mt-10 text-sm">© 2026 Rilynk. All rights reserved.</p>
     </div>
   </footer>
